@@ -1,0 +1,37 @@
+<br><h1>Registeration</h1><br>
+<form (ngSubmit)=onSubmit(f) #f="ngForm">
+  <table class="table">
+    <tr><td>Name:</td><td><input type="text" class="form-control" name="rname" id="" ngModel></td></tr>
+    <tr><td>Address:</td><td><textarea class="form-control" name="raddress" id="" cols="30" rows="3" ngModel></textarea></td></tr>
+    <tr><td><input type="radio" name="rgender" id="" ngModel>Male</td><td><input type="radio" name="rgender" id="" ngModel>Female</td></tr>
+    <tr><td>DoB:</td><td><input type="date" class="form-control" name="rdob" id="" ngModel></td></tr>
+    <tr><td>District:</td>
+      <td>
+          <select id="" class="form-control" name="rdistrict" ngModel>
+              <option selected>Choose...</option>
+              <option>Thrivanthapuram</option>
+              <option>kollam</option>
+              <option>Pathamanthitta</option>
+              <option>Kottayam</option>
+              <option>Alappuzha</option>
+              <option>Idukki</option>
+              <option>Ernakulam</option>
+              <option>Thrissur</option>
+              <option>Malappuram</option>
+              <option>Palakkad</option>
+              <option>wayanad</option>
+              <option>kozhikode</option>
+              <option>kannur</option>
+              <option>Kasargod</option>
+          </select>
+      </td>
+    </tr>
+    <tr><td>Place:</td><td><input type="text" class="form-control" name="rplace" id="" ngModel></td></tr>
+    <tr><td>Mobile:</td><td><input type="text" class="form-control" name="rmobile" id="" ngModel></td></tr>
+    <tr><td>Email:</td><td><input type="email" class="form-control" name="remail" id="" ngModel></td></tr>
+    <tr><td>Username:</td><td><input type="text" class="form-control" name="runame" id="" ngModel></td></tr>
+    <tr><td>Password:</td><td><input type="password" class="form-control" name="rpass" id="" ngModel></td></tr>
+    <tr><td>Confirm-Password:</td><td><input type="password" class="form-control" name="rcpass" id="" ngModel></td></tr>
+    <tr><td></td><td><input type="submit" class="btn btn-primary" value="Regster"></td></tr>
+  </table>
+</form>
